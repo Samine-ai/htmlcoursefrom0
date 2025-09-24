@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Bienvenido</title>
+</head>
+<body>
+    <center>
+        <h1>HTML desde zero</h1>
+    </center>
+<h5>Importante</h5>
+    
+<ul>
+    <li><a href="#Siguiente leccion0">SEO</a></li>
+    <li><a href="#Siguiente leccion1">HTTPS</a></li>
+    <li><a href="#Siguiente leccion2">Formularios</a></li>
+    <li><a href="#Siguiente leccion3">Atributos</a></li>
+    <li><a href="#Siguiente leccion4">Metadatos en programación</a></li>
+</ul>
+    <article>
+        <section>
+            <h2>Tipos de etiquetas</h2>
+            <p>Para empezar sabemos que hay dos tipos de etiquetas las que se abren i se cierran solas
+             i las que solo se abren e no hace falta cerrarlas tambien de que cada etiqueta hace su propia funcion
+             por ejemplo uno se encarga de poner texto otro para poner imagenes etc, pero para poder escribir todo eso
+             se necesita un cuerpo o estructora donde poner esas etiquetas para eso iremos en nestro editor de texto 
+             ya puede ser visual studio o sublime text i pondremos la siguente estructura para crear la pag web en si.<br><br>
+             Si ponemos "<" y elegimos "html" nos saldra la siguiente structura con la que podremos empezar a trabajar.<br>
+            </p>
+            <img src="img/estructura-1.png"><br>
+            <p>Con esta estructura le estamos diciendo al navegar ya sea chrome o edge que esta pag web existe 
+               i no nos lance un error diciendo que no encuentra el sitio, como podemos observar tiene 1 etiqueta 
+               que solo se abre que es el (doctype.html) diciendole al navegador que es la estructura base 
+               despues tenemos 3 etiquetas que se abren i se cierran que son <b>(html/head/body)</b>
+               siempre tiene que ir en ese orden si no no creo que te funcione.
+            </p><br>
+            <p>Dentro de esta estan las cosas que podemos como las que no.</p><br>
+            <p>En el "head" tenemos las etiquetas que no se ven (bueno si se ve pero es de la manera en la que llamaremos la pag)</p><br>
+            <p>Despues en el "body" estan las que si se ven i es donde ponemos el texto el titulo i esas cosas.</p><br>
+            <p>Lo que buscamos al hacer eso es alcanzar el "SEO".</p><br>
+
+            <h2 id="Siguiente leccion0">Que es el SEO?</h2>
+            <p>En HTML,el SEO (Search Engine Optimization) son utilizadas para mejorar la visibilidad y el posicionamiento de una página web 
+               en los resultados de búsqueda de Google y otros motores de búsqueda. 
+               Se centra en optimizar el código para que sea más atractivo para los motores de búsqueda y, 
+               por lo tanto, más fácil de encontrar para los usuarios. 
+            </p><br>
+            <p>Por ejemplo:</p><br>
+            <p>Para poner titulos se utilizan estas etiquetas</p>
+            <img src="img/hola-2.png"width="300px"><br>
+            <p>Cuanto mayor sea el numero de la etiqueta mas grande es el titulo siendo el 1 el mas grande.</p><br>
+            <p>Tambien tenemos estas funciones que es para si quieres destacar alguna palabro o algo pues ahi estan</p>
+            <img src="img/Funciones-1.png"width="300px"><br>
+            <p><b>Resultado</b></p>
+            <img src="img/porque-1.png"width="300px">
+            <p>No sirven mucho pero si las quieres utilizar.</p>
+            
+            <h4>Problema 1 (Porque aparece una linea de texto/parrafo al lado de la otra?)</h4>
+            <p>Primero tienes que saber que no pasa con todas las etiquetas ya que algunas completan la linea i algunas no, por ejemplo</p>
+            <img src="img/si-1.png"width="300px">
+            <p>Basicamente podriamos decir que los que completan la lineaen esa linea no se podra poner nada,<br>
+            como los titulos en cambio en los paragrafos o imagenes si se podran. </p>
+
+            <h4>Problema 2 (Que hacer para completar la linea en las imagenes o textos?)</h4>
+            <p>La manera mas sencilla de hacer eso es utilizando la etiqueta <b>br</b> esta etiqueta ademas de que no se cierra <br>
+                sirve para lo que dije i hay que ponerlo dentro del texto igual a las funciones que vimos antescomo esta manera</p>
+            <img src="img/br-1.png"width="300px">
+            <p><strike>Es de las cosas que mas he utilizado.</strike></p>
+
+            <h2 id="Siguiente leccion1">HTTPS</h2>
+            <p>HTTPS, o Hypertext Transfer Protocol Secure, es la versión segura del protocolo HTTP,<br>
+               que se utiliza para la comunicación entre un navegador web y un sitio web. La "S" en HTTPS significa "seguro"<br>
+               y indica que la conexión está cifrada.<br><br>
+               
+               Por ejemplo en el buscador cuando sale (https://) i el sitio a donde nos esta llevando. 
+               <b>Vale pero como hacemos para poner un enlace en nuestra pagina web?</b><br><br>
+               En este caso utilizaremos la etiqueta (a href) que hace que desde la pagina en donde estamos 
+               nos pueda llevar a otra con un enlace.<br>
+               Para utilizarlo lo escribiremos asi</p>
+               <img src="img/ahref.png"width="300px">
+               <p>En donde estan las dos comas en amarillo es para poner el link o enlace del sitio que queremos que vaya 
+               i a su lado lo que queremos que ponga el link.<br>
+               <b>Algo asi:</b></p>
+               <img src="img/asi.png"width="300px">
+               <p><strike>Esto solo si esta dentro de nuestra carpeta si no primero llamamos a la carpeta i luego a la web.</strike>
+               <b>Asi:</b></p>
+               <img src="img/siesta.png"widht="350px">
+               <p><b>Como ponemos el a href?</b><br></p>
+               <img src="img/ahi.png"width="300px">
+               <p>Asi es como se utiliza el a href ahora viene el primer problema.<br></p>
+               <h4>Problema 1 (Que puedo hacer si al volver de mi pag web me sale este error?)</h4>
+               <img src="img/pasara.png"width="500px">
+               <p>Facil te acuerdas cuando dije que si el contenido de el sitio donde queremos llevar al usuario estava en otra carpeta 
+                teniamos que poner un "/", pues esta ves utilizaremos "../" que sirve para decirle al ordenador que vaya a la carpeta 
+                de antes asi se solucionaria el que no encuentra el archivo ya que lo esta buscando en la misma carpeta el inutol del ordenador.</p>
+            
+            <h2>Etiqueta br</h2><br>
+            <p>La etiqueta br en HTML, proveniente de "break" (romper o interrumpir), es un elemento de línea única que fuerza un salto
+               de línea en un documento de texto, funcionando de manera similar a la tecla "Enter".<br>
+               Es decir que esta etiqueta sirve para hacer un salto en linea.</p>
+            <img src="img/br-1.png"width="500px">
+            <p>Si quieres que deje mas espacios pon mas estiquetas br i listo.</p>
+
+            <h3>Target</h3>
+            <p>El atributo target es una buena herramienta para poder personalizar al maximo la navegacion de tu pagina web.</p>
+            <ul>
+                <li>El atributo "target" es un enlace especifico donde se abre una pag vingulada.</li>
+                <li>Las opciones incluyen: la misma pestaña/ una nueva pestaña/ una nueva ventana o un iframe</li>
+                <li>Los elementos que aceptan este atributo incluyen "<a>,<area>,<form> y <base>"</li>
+            </ul>
+            <img src="img/target.png"width="450px">
+            <p>Al colocar "_BLANK" estamos añadiendo una nueva pestaña.</p>
+            
+            <h3>Listas</h3>
+            <p>Hay dos tipos de listas la ordenadas i las desordenadas</p>
+            <img src="img/listas.png"width="300px">
+
+            <h2>Multimedia</h2>
+            <p>si quieres insertar audios,videos,imagenes en sublime text puedes hacer los siguentes pasos:</p>
+            <img src="img/multimedia-1.png"width="600px"><br>
+            <p>Si no estas en sublime text i estas por ejemplo en visual studio en tu proyecto crea una carpeta
+               y guarda dentro de ella la imagen renombrandola como ".png"<br>
+               Y si es alguna imagen sacada de internet assegurate de poner bien el enlace o la url aunque se recomienda guardar.</p>
+
+            <h2>Div</h2>
+            <p>Un "div" en HTML es un elemento contenedor que se utiliza para agrupar otros elementos dentro de una página web.<br>
+               Es un elemento de bloque, lo que significa que ocupa todo el ancho disponible y comienza en una nueva línea.<br>
+               Por sí mismo, no aporta significado semántico a diferencia de etiquetas como (<header>, <article> o <footer>).<br>
+               Su función principal es organizar el contenido y facilitar el diseño de la página mediante CSS o la manipulación con JavaScript.</p>
+            <img src="img/div-1.png"width="300px">
+
+            <h2 id="Siguiente leccion2">Formularios</h2>
+            <p>Utilizaremos la etiqueta "form" para indicar al navegador que el elemento será un formulario.
+               "form" se emplea para cualquier tipo de formulario HTML, ya sea uno de contacto, suscripción, registro, login, encuesta, etc.<br>
+               Lo usariamos tal que asi:</p>
+            <img src="img/form.png"width="300px"><br>
+            <p><b>Resultado:</b></p>
+            <img src="img/resultado.png"width="500px">
+            <p><b>Tipos de atributos type en html</b></p>
+            <ul>
+                <li>Text: para campos de texto</li>
+                <li>Password: para campos de contraseña</li>
+                <li>Checkbox: para casillas de verificación</li>
+                <li>Radio: para casillas de selección</li>
+                <li>Submit: para botones de envío</li>
+                <li>Reset: para botones de resetear</li>
+                <li>File: para campos de selección de archivo</li>
+            </ul>
+           
+            <img src="img/resultado2.png" width="600px"><br>
+
+            <form>
+                Nombre: <input type="text" style="width:250px; height:35px;"><br><br>
+                Apellidos: <input type="text" style="width:250px; height:35px;"><br><br>
+                Contraseña: <input type="password" style="width:250px; height:35px;"><br><br>
+                Casilla de verificación: <input type="checkbox" style="width:25px; height:25px;"><br><br>
+                Casilla de selección: <input type="radio" style="width:25px; height:25px;"><br><br>
+                Selección de archivo: <input type="file" style="width:260px; height:35px;"><br><br>
+                <input type="submit" value="Enviar" style="width:150px; height:40px;">
+              </form>
+              
+            <p>Despues hay otras como:</p>
+            <form>
+                Color: <input type="color" style="width:250px; height:35px;"><br><br>
+                Tiempo: <input type="time" style="width:250px; height:35px;"><br><br>
+                Fecha: <input type="date" style="width:250px; height:35px;"><br><br>
+            </form>
+
+            <h2 id="Siguiente leccion3">Atributos</h1>
+            <p>Los atributos HTML son valores adicionales que puedes aplicar a las etiquetas de HTML <br>
+               (conocidas como elementos) para modificar su comportamiento o apariencia. (Siempre ira dentro de una etiqueta.)<br>
+               Ahora veremos el atributo required</p>
+            <img src="img/atributo1.png" widht="300">
+            <p>Como resultado nos saldria algo como en la siguente imagen:</p>
+            <img src="img/atributo2.png" width="300">
+            <p>Para finalizar con este mini apartado tenemos la etiqueta text area que sirve para que el usuario 
+               pueda ingresar texto i numero i como atributo tenemos al readonly:</p>
+            <img src="img/atributo3.png" width="500">
+            <img src="img/atributo4.png" width="400"><br>
+
+            <h2>Metadatos</h2>
+            <p>Los metadatos en HTML son información sobre la página web que no se muestra directamente al usuario, 
+                pero que los navegadores, buscadores y redes sociales utilizan para entender mejor el contenido.
+                Se definen dentro de la etiqueta "head" con la etiqueta "meta" (aunque también hay otros elementos 
+                como "title" o "link" que se consideran metadatos).</p>
+            <img src="img/metadatos.png" width="600"><br>
+
+            <h3 id="Siguiente leccion4">Metadatos en programació</h3>
+            <p>En un contexto más general de programación, los metadatos son "datos sobre los datos".
+                No forman parte de la información principal, sino que describen cómo deben interpretarse o manejarse esos datos.</p>
+
+            <img src="img/metadatos2.png" width="300"><br>
+
+            <p>Con todo lo que hemos visto tendrias lo suficiente como para hacer tu primera pag web. Uno como en la que estas
+                ahora mismo claro que si te ha gustado i quieres darles disenyo puedes aprender CSS. Hasta entonces nos vemos i 
+                gracias por llegar hasta el final.</p>
+
+
+        </section>
+    </article>
+
+     </body>
+</html>
